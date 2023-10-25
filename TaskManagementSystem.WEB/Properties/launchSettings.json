@@ -11,7 +11,7 @@
     "TaskManagementSystem.WEB": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7092;http://localhost:5218",
+      "applicationUrl": "https://localhost:7090;http://localhost:5212",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
