@@ -7,9 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Model\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.13" />
   </ItemGroup>
 </Project>

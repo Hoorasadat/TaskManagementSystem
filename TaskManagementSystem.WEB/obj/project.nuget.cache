@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "mEhM/7sE7HTkNrWTyiZC5rt0ZRPb4N3LijcFzqRQGKOMDtUIx2yTHXmxPpe3fZDeaTWs4XWFWh4Xp/RJjC67Pg==",
+  "dgSpecHash": "xRnAaVYaAyGEbiRyn9UXwJWWuc+60CqRITYskadjgfcI4kh4AZtBCbh/quLBuMDyIsWKvvRjKV7MKwt82iUoGg==",
   "success": true,
   "projectFilePath": "/Users/hoora/Learning/ASP.Net/TaskManagementSystem/TaskManagementSystem.WEB/TaskManagementSystem.WEB.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/hoora/.nuget/packages/microsoft.entityframeworkcore/7.0.13/microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.13/microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.13/microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.13/microsoft.entityframeworkcore.inmemory.7.0.13.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/hoora/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -16,5 +16,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TaskManagementSystem.Lib\TaskManagementSystem.Lib.csproj" />
+    <ProjectReference Include="..\TaskManagementSystem.Data\TaskManagementSystem.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.13" />
   </ItemGroup>
 </Project>
