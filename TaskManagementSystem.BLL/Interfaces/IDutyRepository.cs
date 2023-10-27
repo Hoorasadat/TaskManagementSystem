@@ -1,5 +1,5 @@
 ﻿using System;
-using TaskManagementSystem.Lib.Model;
+using TaskManagementSystem.Lib.Models;
 
 namespace TaskManagementSystem.BLL.Interfaces
 {

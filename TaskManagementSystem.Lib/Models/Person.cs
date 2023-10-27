@@ -1,5 +1,5 @@
 ﻿using System;
-namespace TaskManagementSystem.Lib.Model
+namespace TaskManagementSystem.Lib.Models
 {
 	public class Person
 	{

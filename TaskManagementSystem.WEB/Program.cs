@@ -1,4 +1,8 @@
-﻿namespace TaskManagementSystem.WEB;
+﻿using TaskManagementSystem.BLL.Interfaces;
+using TaskManagementSystem.BLL.Repositories;
+using TaskManagementSystem.Data.Data;
+
+namespace TaskManagementSystem.WEB;
 
 public class Program
 {
@@ -8,6 +12,9 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
+
+        builder.Services.AddDbContext<MemoryDbContext>();
+        builder.Services.AddScoped<IDutyRepository, MockDutyRepository>();
 
         var app = builder.Build();
 
