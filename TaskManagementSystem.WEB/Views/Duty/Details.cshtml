@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Task Details";
+}
+
+@{
+    var duty = ViewData["Duty"] as TaskManagementSystem.Lib.Models.Duty;
+}
+
+<h1>@ViewData["Header"]</h1>
+
+<div>
+    Task number: @duty.Id
+</div>
+
+<div>
+    Task Title: @duty.Title
+</div>
+
+<div>
+    Task Description: @duty.Description
+</div>
+
+<div>
+    Task DueDate: @duty.DueDate
+</div>
+
+<div>
+    Task Priority: @duty.Priority
+</div>
+
+<div>
+    Task Status: @duty.Status
+</div>
+
+<div>
+    Task Person: @duty.PersonID
+</div>
+
+<div>
+    Task Person: @duty.Person
+</div>

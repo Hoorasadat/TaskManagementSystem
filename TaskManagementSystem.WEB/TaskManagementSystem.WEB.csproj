@@ -11,10 +11,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
-    <Folder Include="Views\Task\" />
+    <Folder Include="Views\Duty\" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Views\Task\" />
+    <None Remove="Views\Duty\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.13" />
