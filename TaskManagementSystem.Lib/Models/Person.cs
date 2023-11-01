@@ -5,6 +5,7 @@ namespace TaskManagementSystem.Lib.Models
 	{
         public int Id { get; set; }
         public required string Name { get; set; }
+
         public IList<Duty>? Duties { get; set; }
     }
 }

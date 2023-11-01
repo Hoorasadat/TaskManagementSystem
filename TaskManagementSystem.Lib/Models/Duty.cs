@@ -10,6 +10,7 @@ namespace TaskManagementSystem.Lib.Models
         public Priority Priority { get; set; }
         public Status Status { get; set; }
         public int PersonID { get; set; }
+
         public Person? Person { get; set; }
     }
 }

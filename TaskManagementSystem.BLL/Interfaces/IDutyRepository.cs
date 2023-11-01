@@ -13,7 +13,7 @@ namespace TaskManagementSystem.BLL.Interfaces
 
 		Task<Duty> UpdateDuty(Duty updatedDuty);
 
-		void DeleteDuty(int id);
+        Task<Duty> DeleteDuty(int id);
 	}
 }
 

@@ -13,7 +13,7 @@ namespace TaskManagementSystem.BLL.Interfaces
 
 		Task<Person> UpdatePerson(Person updatedPerson);
 
-		void DeletePerson(int id);
+        Task<Person> DeletePerson(int id);
 	}
 }
 
