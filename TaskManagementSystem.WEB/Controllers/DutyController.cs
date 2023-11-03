@@ -25,6 +25,7 @@ namespace TaskManagementSystem.WEB.Controllers
             return View(duties);
         }
 
+
         // GET: /duty/details/id
         public async Task<ViewResult> Details(int id)
         {
@@ -34,6 +35,15 @@ namespace TaskManagementSystem.WEB.Controllers
             ViewData["Duty"] = duty;
             
             return View();
+        }
+
+
+        // GET: /duty/edit/id
+        public async Task<ViewResult> Edit(int id)
+        {
+            Duty duty = await _dutyRepository.GetDuty(id);
+
+            return View(duty);
         }
     }
 }

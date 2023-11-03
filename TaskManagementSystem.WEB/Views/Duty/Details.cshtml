@@ -1,9 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Task Details";
+    var duty = ViewData["Duty"] as TaskManagementSystem.Lib.Models.Duty;
 }
 
 @{
-    var duty = ViewData["Duty"] as TaskManagementSystem.Lib.Models.Duty;
+    ViewData["Title"] = "Task Details";
 }
 
 <h1>@ViewData["Header"]</h1>

@@ -1,0 +1,56 @@
+﻿@model Duty
+
+@{
+    ViewData["Title"] = "Edit Task";
+}
+
+<h1>Edit task no. @Model.Id:</h1>
+
+
+
+<div class="row mb-2">
+    <label asp-for="Title" class="col-form-label col-md-1"></label>
+    <div class="col-md-3">
+        <input asp-for="Title" class="form-control" />
+        @*<span asp-validation-for="TagNumber" class="text-danger"></span>*@
+    </div>
+</div>
+
+
+<div class="row mb-2">
+    <label asp-for="Description" class="col-form-label col-md-1"></label>
+    <div class="col-md-11">
+        <input asp-for="Description" class="form-control" />
+    </div>
+</div>
+
+
+<div class="row mb-2">
+    <label asp-for="DueDate" class="col-form-label col-md-1"></label>
+    <div class="col-md-3">
+        <input asp-for="DueDate" class="form-control" />
+    </div>
+</div>
+
+
+<div class="row mb-2">
+    <label asp-for="Priority" class="col-form-label col-md-1"></label>
+    <div class="col-md-3">
+        <select asp-for="Priority" class="form-select" asp-items="Html.GetEnumSelectList<Priority>()"></select>
+    </div>
+</div>
+
+
+<div class="row mb-2">
+    <label asp-for="Status" class="col-form-label col-md-1"></label>
+    <div class="col-md-3">
+        <select asp-for="Status" class="form-select" asp-items="Html.GetEnumSelectList<Status>()"></select>
+    </div>
+</div>
+
+<div class="row mb-2">
+    <label asp-for="Person" class="col-form-label col-md-1"></label>
+    <div class="col-md-3">
+        <select asp-for="Person" class="form-select"></select>
+    </div>
+</div>
