@@ -14,15 +14,16 @@ namespace TaskManagementSystem.WEB.Controllers
         }
 
 
+
         // GET: /duty/index
-        public async Task<ViewResult> Index(int id)
+        public async Task<ViewResult> Index()
         {
             IList<Duty> duties = await _dutyRepository.GetAllDuties();
 
-            ViewBag.Header = "List of All Tasks:";
+            ViewBag.Header = "List of all Tasks:";
             ViewBag.Duties = duties;
 
-            return View(duties);
+            return View();
         }
 
 

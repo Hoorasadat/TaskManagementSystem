@@ -13,5 +13,6 @@ namespace TaskManagementSystem.Data.Data
         }
 
         public DbSet<Duty> Duties { get; set; }
+        public DbSet<Person> Persons { get; set; }
     }
 }

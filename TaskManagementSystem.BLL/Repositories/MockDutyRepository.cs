@@ -45,6 +45,7 @@ namespace TaskManagementSystem.BLL.Repositories
         public async Task<IList<Duty>> GetAllDuties()
         {
             IList<Duty> duties = await _context.Duties.ToListAsync<Duty>();
+
             return duties;
         }
 
@@ -119,4 +120,3 @@ namespace TaskManagementSystem.BLL.Repositories
 
     }
 }
-

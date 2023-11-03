@@ -15,6 +15,7 @@ public class Program
 
         builder.Services.AddDbContext<MemoryDbContext>();
         builder.Services.AddScoped<IDutyRepository, MockDutyRepository>();
+        builder.Services.AddScoped<IPersonRepository, MockPersonRepository>();
 
         var app = builder.Build();
 
