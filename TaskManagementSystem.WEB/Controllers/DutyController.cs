@@ -18,6 +18,10 @@ namespace TaskManagementSystem.WEB.Controllers
         public async Task<ViewResult> Index(int id)
         {
             IList<Duty> duties = await _dutyRepository.GetAllDuties();
+
+            ViewBag.Header = "List of All Tasks:";
+            ViewBag.Duties = duties;
+
             return View(duties);
         }
 
@@ -25,8 +29,10 @@ namespace TaskManagementSystem.WEB.Controllers
         public async Task<ViewResult> Details(int id)
         {
             Duty duty = await _dutyRepository.GetDuty(id);
+
             ViewData["Header"] = "Task Details:";
             ViewData["Duty"] = duty;
+            
             return View();
         }
     }
