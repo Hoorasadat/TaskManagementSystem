@@ -1,0 +1,23 @@
+﻿@model Person
+
+@{
+    ViewData["Title"] = "Person\'s Details";
+}
+
+<h1 class="pb-4 pt-4">Person's Details:</h1>
+
+<div>
+    <strong>Person number:</strong> @Model.Id
+</div>
+
+<div>
+    <strong>Person name:</strong> @Model.Name
+</div>
+
+<br />
+<br />
+<br />
+
+<div>
+    <a asp-controller="Person" asp-action="Index">Go Back</a>
+</div>

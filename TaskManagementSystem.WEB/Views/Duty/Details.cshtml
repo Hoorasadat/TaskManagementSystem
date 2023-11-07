@@ -9,33 +9,41 @@
 <h1 class="pb-4 pt-4">@ViewData["Header"]</h1>
 
 <div>
-    Task number: @duty.Id
+    <strong>Task number:</strong> @duty.Id
 </div>
 
 <div>
-    Task Title: @duty.Title
+    <strong>Task Title:</strong> @duty.Title
 </div>
 
 <div>
-    Task Description: @duty.Description
+    <strong>Task Description:</strong> @duty.Description
 </div>
 
 <div>
-    Task DueDate: @duty.DueDate
+    <strong>Task DueDate:</strong> @duty.DueDate
 </div>
 
 <div>
-    Task Priority: @duty.Priority
+    <strong>Task Priority:</strong> @duty.Priority
 </div>
 
 <div>
-    Task Status: @duty.Status
+    <strong>Task Status:</strong> @duty.Status
 </div>
 
 <div>
-    Task Person: @duty.PersonID
+    <strong>Task Person:</strong> @duty.PersonID
 </div>
 
 <div>
-    Task Person: @duty.Person
+    <strong>Task Person:</strong> @duty.Person
+</div>
+
+<br />
+<br />
+<br />
+
+<div>
+    <a asp-controller="Duty" asp-action="Index">Go Back</a>
 </div>

@@ -23,8 +23,8 @@
                     <td>@person.Id</td>
                     <td>@person.Name</td>
                     <td>
-                        <a href="#">View</a>
-                        <a href="#">Edit</a>
+                        <a asp-controller="Person" asp-action="Details" asp-route-id="@person.Id">View</a>
+                        <a asp-controller="Person" asp-action="Edit" asp-route-id="@person.Id">Edit</a>
                         <a href="#">Delete</a>
                     </td>
                 </tr>

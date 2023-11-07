@@ -42,9 +42,11 @@ namespace TaskManagementSystem.BLL.Repositories
         }
 
 
-        public Task<Person> GetPerson(int id)
+        public async Task<Person> GetPerson(int id)
         {
-            throw new NotImplementedException();
+            Person person = await _context.Persons.FirstOrDefaultAsync(x => x.Id == id);
+
+            return person;
         }
 
 

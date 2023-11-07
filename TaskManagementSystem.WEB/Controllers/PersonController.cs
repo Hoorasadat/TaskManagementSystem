@@ -22,6 +22,15 @@ namespace TaskManagementSystem.WEB.Controllers
 
             return View(persons);
         }
+
+
+        // Get: /person/detials/id
+        public async Task<ViewResult> Details(int id)
+        {
+            Person person = await _personRepository.GetPerson(id);
+
+            return View(person);
+        }
     }
 }
 
