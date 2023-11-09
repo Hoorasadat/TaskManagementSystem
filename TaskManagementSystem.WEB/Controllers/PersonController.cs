@@ -24,6 +24,29 @@ namespace TaskManagementSystem.WEB.Controllers
         }
 
 
+
+        // Get: /person/edit/id
+        [HttpGet]
+        public async Task<ViewResult> Edit(int id)
+        {
+            Person person = await _personRepository.GetPerson(id);
+
+            return View(person);
+        }
+
+
+
+        // POST: /person/edit/person
+        [HttpPost]
+        public async Task<ViewResult> Edit(Person person)
+        {
+            Person updatedPerson = await _personRepository.UpdatePerson(person);
+
+            return View(updatedPerson);
+        }
+
+
+
         // Get: /person/detials/id
         public async Task<ViewResult> Details(int id)
         {

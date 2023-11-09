@@ -50,9 +50,20 @@ namespace TaskManagementSystem.BLL.Repositories
         }
 
 
-        public Task<Person> UpdatePerson(Person updatedPerson)
+        public async Task<Person> UpdatePerson(Person updatedPerson)
         {
-            throw new NotImplementedException();
+            Person person = await _context.Persons.FirstOrDefaultAsync(x => x.Id == updatedPerson.Id);
+
+            if (person == null)
+                return null;
+
+            person.Name = updatedPerson.Name;
+
+            _context.Persons.Update(person);
+
+            await _context.SaveChangesAsync();
+
+            return person;
         }
 
 

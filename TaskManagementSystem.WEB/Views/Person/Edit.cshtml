@@ -1,0 +1,23 @@
+﻿@model Person
+
+@{
+    ViewData["Title"] = "Edit Person";
+}
+
+<h1 class="pb-4 pt-4">Edit person no. @Model.Id:</h1>
+
+
+<div class="row mb-2">
+    <label asp-for="Name" class="col-form-label col-md-1"></label>
+    <div class="col-md-3">
+        <input asp-for="Name" class="form-control" />
+    </div>
+</div>
+
+<br />
+<br />
+<br />
+
+<div>
+    <a asp-controller="PErson" asp-action="Index">Go Back</a>
+</div>
